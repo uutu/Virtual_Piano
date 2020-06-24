@@ -273,6 +273,65 @@ files:
         }
     );
   learner_created: false
+- name: src/stylesheet.css
+  visible: true
+  text: |-
+    html {
+        background-color: #fde1de;
+    }
+
+    kbd {
+        background-color: white;
+        display: inline-block;
+        height: 28em;
+        width: 11em;
+        margin-left: -0.45em;
+        border: solid black 1px;
+    }
+
+    .container {
+        text-align: center;
+        margin-top: 10%;
+    }
+  learner_created: true
+- name: src/script.js
+  visible: true
+  text: |-
+    document.addEventListener("keydown", function(event) {
+        if (event.code == "KeyA" || event.code == "KeyS" || event.code == "KeyD" || event.code == "KeyF"
+            || event.code == "KeyG" || event.code == "KeyH" || event.code == "KeyJ") {
+            console.log("The '" + event.code.charAt(3) +"' key is pressed");
+        }
+        else {
+            console.log("Some other key was pressed");
+        }
+    });
+  learner_created: true
+- name: src/index.html
+  visible: true
+  text: |-
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Virtual Piano</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="container">
+            <kbd>A</kbd>
+            <kbd>S</kbd>
+            <kbd>D</kbd>
+            <kbd>F</kbd>
+            <kbd>G</kbd>
+            <kbd>H</kbd>
+            <kbd>J</kbd>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/101/stages/559/implement
-status: Unchecked
+status: Solved
 record: -1
