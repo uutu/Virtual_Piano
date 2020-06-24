@@ -2,13 +2,34 @@ html {
     background-color: #fde1de;
 }
 
-kbd {
+.white-keys kbd {
     background-color: white;
     display: inline-block;
-    height: 28em;
+    height: 32em;
     width: 11em;
     margin-left: -0.45em;
     border: solid black 1px;
+}
+
+.black-keys kbd {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    height: 20em;
+    width: 6em;
+    position: relative;
+    top: -32.4em;
+}
+
+.black-keys .left {
+    right: 7em;
+    margin: 0em 2em;
+}
+
+.black-keys .right {
+    left: 5em;
+    margin: 0em 2em;
+
 }
 
 .container {

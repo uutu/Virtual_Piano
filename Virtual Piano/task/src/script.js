@@ -27,6 +27,26 @@ document.addEventListener("keydown", function(event) {
         let audio = new Audio("./audio/G.mp3");
         audio.play();
     }
+    else if (event.code == "KeyW") {
+        let audio = new Audio("./audio/W.mp3");
+        audio.play();
+    }
+    else if (event.code == "KeyE") {
+        let audio = new Audio("./audio/E.mp3");
+        audio.play();
+    }
+    else if (event.code == "KeyT") {
+        let audio = new Audio("./audio/T.mp3");
+        audio.play();
+    }
+    else if (event.code == "KeyY") {
+        let audio = new Audio("./audio/Y.mp3");
+        audio.play();
+    }
+    else if (event.code == "KeyU") {
+        let audio = new Audio("./audio/U.mp3");
+        audio.play();
+    }
     else {
         console.log("The '" + event.code +"' key is pressed");
     }
