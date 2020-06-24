@@ -1,0 +1,17 @@
+html {
+    background-color: #fde1de;
+}
+
+kbd {
+    background-color: white;
+    display: inline-block;
+    height: 28em;
+    width: 11em;
+    margin-left: -0.45em;
+    border: solid black 1px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 10%;
+}
